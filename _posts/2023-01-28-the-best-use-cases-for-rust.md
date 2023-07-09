@@ -1,13 +1,11 @@
 ---
 title: The Best Use Cases for Rust Programming Language
-author: Zouheir Barhoumi
+author: Zuhayr Barhumi
 date: 2023-01-28  +0100
-categories: [Rust, Programming Languages]
-tags: [rust, use cases, software development]
-pin: true
+categories: [Programming Languages, Rust]
+tags: [rust, use cases, software development, programming languages]
+pin: false
 ---
-
-# The best use cases for Rust programming language
 
 This post is about the best use cases for the Rust programming language.
 
@@ -51,7 +49,7 @@ The Windows versions of Rust are still in the early stages of development, so th
 
 ### 2\. Advantages of Rust
 
-![Benefits of using Rust](https://www.millionlines.ml/wp-content/uploads/2023/01/Rust-cropped.png)
+![Benefits of using Rust](/assets/images/Rust-cropped-768x715.png)
 
 Despite the few shortcomings, there are several advantages of using Rust that more than outweigh any drawback.
 
@@ -74,7 +72,5 @@ This makes it well-suited to projects that require a customized runtime environm
 Rust is a programming language that has gained a lot of traction in the development community in recent years. It offers developers an impressive set of advantages over traditional languages, including improved code safety, speed, and robustness.
 
 Rust’s key selling points are its memory safety and its ability to run in any runtime environment. It also provides developers with the tools they need to create reliable and performant applications quickly and easily. With Rust, developers can write code that is both safe and efficient, making it an ideal choice for many types of projects.
-
-![Rust programming language logo](https://www.millionlines.ml/wp-content/uploads/2023/01/Rust-Programming-Language-1024x1024.webp)
 
 The best resource to learn Rust by far has to be the official documentations. I know that a lot of programmers say the same thing about their favorite framework or language but I find Rust’s to be exceptionally good. You can start with “[the book](https://doc.rust-lang.org/book/)” or go through the [course](https://github.com/rust-lang/rustlings/) exercises on GitHub. Alternatively, they offer you the [option](https://doc.rust-lang.org/stable/rust-by-example/) to learn by doing.
