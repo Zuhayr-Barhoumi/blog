@@ -1,7 +1,7 @@
 ---
 title: Data Structures in Java, Part 2 - Arrays and ArrayLists
 author: Zuhayr Barhumi
-date: 2023-07-08 +0100
+date: 2023-07-20 +0100
 categories: [Software Development, Java, Programming]
 tags:
   [
