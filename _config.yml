@@ -80,7 +80,8 @@ theme_mode: #[light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/images/jeancousteau_a_retro_esoteric_artist_collage_that_represents.jpeg
+avatar: /assets/images/papers.co-vx34-singapore-building-pattern-background.jpg
+# /assets/images/jeancousteau_a_retro_esoteric_artist_collage_that_represents.jpeg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
