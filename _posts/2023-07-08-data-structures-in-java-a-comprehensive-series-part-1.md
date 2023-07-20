@@ -24,13 +24,13 @@ A fixed size collection of elements of the same type.
 
 ## **Syntax**:
 
-```
+```java
 DataType[] arrayName = new DataType[size];
 ```
 
 ## **Example**:
 
-```
+```java
 int[] numbers = new int[5];
 ```
 
@@ -55,7 +55,7 @@ int[] numbers = new int[5];
 
 ## Array Operations Example:
 
-```
+```java
 public class ArrayExample {    public static void main(String[] args) {                int[] numbers = new int[5];                numbers[0] = 10;        numbers[1] = 20;        numbers[2] = 30;        numbers[3] = 40;        numbers[4] = 50;                System.out.println("Array elements:");        for (int i = 0; i < numbers.length; i++) {            System.out.println(numbers[i]);        }                numbers[2] = 35;                System.out.println("Updated element at index 2: " + numbers[2]);                int sum = 0;        for (int i = 0; i < numbers.length; i++) {            sum += numbers[i];        }        System.out.println("Sum of array elements: " + sum);                int max = numbers[0];        for (int i = 1; i < numbers.length; i++) {            if (numbers[i] > max) {                max = numbers[i];            }        }        System.out.println("Maximum value in the array: " + max);    }}
 ```
 
@@ -65,13 +65,13 @@ A dynamically resizable array-based implementation of the List interface.
 
 ## **Syntax**:
 
-```
+```java
 ArrayList<DataType> listName = new ArrayList<>();
 ```
 
 ## **Example**:
 
-```
+```java
 ArrayList<String> names = new ArrayList<>();
 ```
 
@@ -94,7 +94,7 @@ ArrayList<String> names = new ArrayList<>();
 
 ## ArrayList Operations Example:
 
-```
+```java
 import java.util.ArrayList;public class ArrayListExample {    public static void main(String[] args) {                ArrayList<Integer> numbers = new ArrayList<>();                numbers.add(10);        numbers.add(20);        numbers.add(30);        numbers.add(40);                System.out.println("Element at index 0: " + numbers.get(0));        System.out.println("Element at index 2: " + numbers.get(2));                numbers.set(1, 50);        System.out.println("Updated element at index 1: " + numbers.get(1));                numbers.remove(2);        System.out.println("ArrayList after removing element at index 2: " + numbers);                System.out.println("Size of the ArrayList: " + numbers.size());                System.out.println("Is the ArrayList empty? " + numbers.isEmpty());                System.out.println("Elements in the ArrayList:");        for (int number : numbers) {            System.out.println(number);        }                numbers.clear();        System.out.println("ArrayList after clearing: " + numbers);    }}
 ```
 
@@ -104,13 +104,13 @@ A dynamically resizable array-based implementation of the List interface.
 
 ## **Syntax**:
 
-```
+```java
 LinkedList<DataType> listName = new LinkedList<>();
 ```
 
 ## **Example**:
 
-```
+```java
 LinkedList<Integer> numbers = new LinkedList<>();
 ```
 
@@ -133,7 +133,7 @@ LinkedList<Integer> numbers = new LinkedList<>();
 
 ## LinkedList Operations Example:
 
-```
+```java
 import java.util.LinkedList;public class LinkedListExample {    public static void main(String[] args) {                LinkedList<String> linkedList = new LinkedList<>();                linkedList.add("Apple");        linkedList.add("Banana");        linkedList.add("Cherry");        linkedList.add("Durian");                System.out.println("LinkedList: " + linkedList);                int size = linkedList.size();        System.out.println("Size of LinkedList: " + size);                boolean isEmpty = linkedList.isEmpty();        System.out.println("Is LinkedList empty? " + isEmpty);                String firstElement = linkedList.get(0);        String lastElement = linkedList.getLast();        System.out.println("First element: " + firstElement);        System.out.println("Last element: " + lastElement);                linkedList.add(2, "Grapes");        System.out.println("LinkedList after adding at index 2: " + linkedList);                String removedElement = linkedList.remove(1);        System.out.println("Removed element: " + removedElement);        System.out.println("LinkedList after removing at index 1: " + linkedList);                boolean containsElement = linkedList.contains("Cherry");        System.out.println("Does LinkedList contain 'Cherry'? " + containsElement);                linkedList.clear();        System.out.println("LinkedList after clearing: " + linkedList);    }}
 ```
 
@@ -143,13 +143,13 @@ A Last-In-First-Out (LIFO) data structure.
 
 ## **Syntax**:
 
-```
+```java
 Stack<DataType> stackName = new Stack<>();
 ```
 
 ## **Example**:
 
-```
+```java
 Stack<String> stack = new Stack<>();
 ```
 
@@ -172,7 +172,7 @@ Stack<String> stack = new Stack<>();
 
 ## Stack Operations Example:
 
-```
+```java
 import java.util.EmptyStackException;public class Stack<T> {    private int size;    private Node<T> top;    private static class Node<T> {        private T data;        private Node<T> next;        public Node(T data) {            this.data = data;        }    }    public Stack() {        size = 0;        top = null;    }    public boolean isEmpty() {        return size == 0;    }    public int size() {        return size;    }    public void push(T element) {        Node<T> newNode = new Node<>(element);        newNode.next = top;        top = newNode;        size++;    }    public T pop() {        if (isEmpty()) {            throw new EmptyStackException();        }        T data = top.data;        top = top.next;        size--;        return data;    }    public T peek() {        if (isEmpty()) {            throw new EmptyStackException();        }        return top.data;    }    public static void main(String[] args) {        Stack<Integer> stack = new Stack<>();        stack.push(10);        stack.push(20);        stack.push(30);        System.out.println("Stack size: " + stack.size());        System.out.println("Top element: " + stack.peek());        System.out.println("Popping elements:");        while (!stack.isEmpty()) {            System.out.println(stack.pop());        }        System.out.println("Stack size: " + stack.size());    }}
 ```
 
@@ -182,13 +182,13 @@ A First-In-First-Out (FIFO) data structure.
 
 ## **Syntax**:
 
-```
+```java
 Queue<DataType> queueName = new LinkedList<>();
 ```
 
 ## **Example**:
 
-```
+```java
 Queue<Integer> queue = new LinkedList<>();
 ```
 
@@ -217,13 +217,13 @@ A queue where elements are ordered based on their priorities.
 
 ## **Syntax**:
 
-```
+```java
 Queue<DataType> queueName = new LinkedList<>();
 ```
 
 ## **Example**:
 
-```
+```java
 PriorityQueue<DataType> priorityQueueName = new PriorityQueue<>();
 ```
 
@@ -250,13 +250,13 @@ A collection that stores unique elements in sorted order.
 
 ## **Syntax**:
 
-```
+```java
 TreeSet<DataType> setName = new TreeSet<>();
 ```
 
 ## **Example:**
 
-```
+```java
 TreeSet<Integer> set = new TreeSet<>();
 ```
 
@@ -282,13 +282,13 @@ A key-value mapping collection that uses hashing.
 
 ## Syntax:
 
-```
+```java
 HashMap<KeyType, ValueType> mapName = new HashMap<>();
 ```
 
 ## Example:
 
-```
+```java
 HashMap<String, Integer> map = new HashMap<>();
 ```
 
@@ -315,13 +315,13 @@ A key-value mapping collection that stores elements in sorted order.
 
 ## Syntax:
 
-```
+```java
 TreeMap<KeyType, ValueType> mapName = new TreeMap<>();
 ```
 
 ## Example:
 
-```
+```java
 TreeMap<Integer, String> map = new TreeMap<>();
 ```
 
