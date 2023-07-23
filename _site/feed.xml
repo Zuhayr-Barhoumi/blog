@@ -1,0 +1,220 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Zuhayr Barhumi</title>
+  <subtitle>A blog dedicated to documenting my coding journey, exploring tech's possibilities and sharing expert insights.</subtitle>
+  <updated>2023-07-23T03:43:18+01:00</updated>
+  <author>
+    <name>Zuhayr Barhumi</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 Zuhayr Barhumi </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Data Structures in Java, Part 2 - Arrays and ArrayLists</title>
+    <link href="http://localhost:4000/posts/data-structures-in-java-part-2-arrays-and-arrayLists/" rel="alternate" type="text/html" title="Data Structures in Java, Part 2 - Arrays and ArrayLists" />
+    <published>2023-07-20T00:00:00+01:00</published>
+  
+    <updated>2023-07-20T07:57:56+01:00</updated>
+  
+    <id>http://localhost:4000/posts/data-structures-in-java-part-2-arrays-and-arrayLists/</id>
+    <content src="http://localhost:4000/posts/data-structures-in-java-part-2-arrays-and-arrayLists/" />
+    <author>
+      <name>Zuhayr Barhumi</name>
+    </author>
+
+  
+    
+    <category term="Software Development" />
+    
+    <category term="Java" />
+    
+    <category term="Programming" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      In this article, our dive into the world of data structures continues. This time further exploring two fundamental structures: Arrays and ArrayLists. These data structures play a crucial role in Java programming. They allow us to efficiently store and manipulate collections of elements.
+I’ll shed light on their nuances, advantages, and implementation through practical examples.
+
+Understanding A...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Data Structures in Java - A Comprehensive Series, Part 1</title>
+    <link href="http://localhost:4000/posts/data-structures-in-java-a-comprehensive-series-part-1/" rel="alternate" type="text/html" title="Data Structures in Java - A Comprehensive Series, Part 1" />
+    <published>2023-07-08T00:00:00+01:00</published>
+  
+    <updated>2023-07-20T08:44:29+01:00</updated>
+  
+    <id>http://localhost:4000/posts/data-structures-in-java-a-comprehensive-series-part-1/</id>
+    <content src="http://localhost:4000/posts/data-structures-in-java-a-comprehensive-series-part-1/" />
+    <author>
+      <name>Zuhayr Barhumi</name>
+    </author>
+
+  
+    
+    <category term="Software Development" />
+    
+    <category term="Java" />
+    
+    <category term="Programming" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Efficiency, scalability, and maintainability are essential elements of software development. One crucial aspect that contributes to these attributes is the effective utilization of data structures. As programmers, we often find ourselves facing the daunting task of implementing features or writing programs without a clear path in sight.
+
+In this piece, I share an overview of data structures in ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Three Programming Paradigms and Their Use Cases</title>
+    <link href="http://localhost:4000/posts/three-programming-paradigms-and-their-use-cases/" rel="alternate" type="text/html" title="Three Programming Paradigms and Their Use Cases" />
+    <published>2023-05-26T00:00:00+01:00</published>
+  
+    <updated>2023-05-26T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/three-programming-paradigms-and-their-use-cases/</id>
+    <content src="http://localhost:4000/posts/three-programming-paradigms-and-their-use-cases/" />
+    <author>
+      <name>Zuhayr Barhumi</name>
+    </author>
+
+  
+    
+    <category term="Software Development" />
+    
+    <category term="Programming Paradigms" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Understanding the most common programming paradigms is essential in the field of software development in order to craft efficient, maintainable, and scalable applications. In this article I’ll delve into the domain of programming paradigms. In particular, I will introduce procedural, object-oriented, and functional programming and what they’re all about. By giving an overview of their distincti...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>The Benefits of Decentralized Databases for Web Development</title>
+    <link href="http://localhost:4000/posts/the-benefits-of-decentralized-databases-for-web-development/" rel="alternate" type="text/html" title="The Benefits of Decentralized Databases for Web Development" />
+    <published>2023-02-20T00:00:00+01:00</published>
+  
+    <updated>2023-02-20T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/the-benefits-of-decentralized-databases-for-web-development/</id>
+    <content src="http://localhost:4000/posts/the-benefits-of-decentralized-databases-for-web-development/" />
+    <author>
+      <name>Zuhayr Barhumi</name>
+    </author>
+
+  
+    
+    <category term="Web Development" />
+    
+    <category term="Back-End Development" />
+    
+    <category term="Technology" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Advantages of Using Decentralized Databases for Web Development
+
+Technology is advancing rapidly in today’s world, leading businesses to seek innovative solutions to improve their data storage and management. Decentralized databases have gained attention as a solution in recent years. These databases offer several advantages over traditional, centralized databases, making them a desirable cho...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>The Future of Full Stack Web Development - Trends to Watch in 2023</title>
+    <link href="http://localhost:4000/posts/the-future-of-full-stack-web-development-trends-to-watch-in-2023/" rel="alternate" type="text/html" title="The Future of Full Stack Web Development - Trends to Watch in 2023" />
+    <published>2023-02-13T00:00:00+01:00</published>
+  
+    <updated>2023-02-13T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/the-future-of-full-stack-web-development-trends-to-watch-in-2023/</id>
+    <content src="http://localhost:4000/posts/the-future-of-full-stack-web-development-trends-to-watch-in-2023/" />
+    <author>
+      <name>Zuhayr Barhumi</name>
+    </author>
+
+  
+    
+    <category term="Web Development" />
+    
+    <category term="Technology" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Latest Trends in Full Stack Web Development: Cross-Platform &amp;amp; AI/ML
+
+Web development has always been a dynamic field. New technologies and trends have been emerging everyday. In recent years, the speed of this change has only accelerated. Full Stack Web Development is more arduous than ever. The field requires developers to have a wide range of skills and knowledge. It is challenging for de...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
