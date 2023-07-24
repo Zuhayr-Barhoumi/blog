@@ -14,7 +14,7 @@ tags:
 pin: true
 ---
 
-We have seen thus far the vital importance that data structures play in organizing and managing information effectively. Even though arrays and ArrayLists are well-known for their static size and dynamic resizing capabilities, we have at our disposal a powerful alternative that offers greater flexibility and memory efficiency — the Linked List.
+We have seen so far the vital importance that data structures play in organizing and managing information effectively. Even though arrays and ArrayLists are well-known for their static size and dynamic resizing capabilities, we have at our disposal a powerful alternative that offers greater flexibility and memory efficiency — the Linked List.
 
 Through this article, I explore the significance of linked lists in Java programming. Let’s uncover their inner workings, understand the variations (singly linked and doubly linked lists), and the scenarios where linked lists shine. Grasping the essence of linked lists enhances our understanding of data structures and paves the way for more efficient programming solutions.
 
@@ -267,9 +267,21 @@ LinkedLists provide dynamic memory allocation and efficient insertions and delet
 - **Sequential access:** Whereas in arrays we have direct access to elements by index, that is not possible in LinkedLists. To find specific elements we need to traverse the nodes in a sequential manner.
 - **Extra memory:** Each node in a LinkedList requires additional memory for the reference to the next. And previous node, in the case of Doubly Linked Lists.
 
-## When to Use LinkedLists:
+#### When to Use LinkedLists:
 
-In certain scenarios, we need to frequently insert or delete elements from a list whose size is supposed to change dynamically during the execution of the program. In such cases, LinkedLists come in handy. They are particularly suitable when the order of elements matters. As well as, when we need to manage data efficiently without having a predefined size.
+**Dynamic size and frequent insertion and deletion:** In certain scenarios, we may need to frequently insert or delete elements from a list whose size needs to change dynamically during the execution of the program. Linked Lists are an ideal way to achieve that.
+
+**Efficient Iterations:** Accessing elements by index is slower in LinkedLists compared to arrays but iterating through **all** elements is, indeed, efficient. In other words, LinkedLists are particularly useful when you need to traverse the entire list **sequentially**.
+
+**Implementing Graphs:** LinkedLists are commonly used to represent graphs, where each node in the list represents a vertex, and the edges are stored as references to other nodes in the list.
+
+**Memory Efficiency:** Compared to arrays or ArrayLists, LinkedLists can be more memory-efficient. They only require memory for the data and references to the next and previous node. Arrays have additional overhead for the fixed-size buffer.
+
+#### LinkedList vs. ArrayList:
+
+As I’ve already mentioned some of the use cases for LinkedLists you may conclude that are a more suitable choice than Arrays and ArrayLists. However, in many other cases I’d say the opposite. For example, accessing elements by index is slower in LinkedLists than in arrays. Therefore, if your use case requires frequent insertions and deletions at the either ends of the collection or **sequential access** then use LinkedLists. If your use case, otherwise, requires frequent **random** **access**, arrays or ArrayLists might be more suitable.
+
+As with any data structure, the choice of using a LinkedList depends on the specific requirements and constraints of the problem you are trying to solve.
 
 ## Practical Code Example of LinkedList:
 
