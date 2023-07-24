@@ -960,9 +960,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1891 words"
+  title="2564 words"
 >
-  <em>10 min</em> read</span>
+  <em>14 min</em> read</span>
 
     </div>
 
@@ -1021,7 +1021,35 @@ I’ll shed light on their nuances, advantages, and implementation through pract
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayVulnerabilityExample</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>        <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>                <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>            <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>        <span class="o">}</span>                <span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The value at index 4is: "</span> <span class="o">+</span> <span class="n">value</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayVulnerabilityExample</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>
+
+        <span class="c1">// Fill the array with values</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Access the array outside of its bounds</span>
+        <span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The value at index 4is: "</span> <span class="o">+</span> <span class="n">value</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="iterating-over-arrays"><span class="me-2">Iterating over Arrays:</span><a href="#iterating-over-arrays" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1076,7 +1104,47 @@ The loop variable can be used as an index to access elements.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MissingNumberFinder</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">findMissingNumber</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>         <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="o">(</span><span class="n">n</span> <span class="o">*</span> <span class="o">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="o">))</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>                 <span class="kt">int</span> <span class="n">arraySum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">num</span> <span class="o">:</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>            <span class="n">arraySum</span> <span class="o">+=</span> <span class="n">num</span><span class="o">;</span>        <span class="o">}</span>                <span class="k">return</span> <span class="n">sum</span> <span class="o">-</span> <span class="n">arraySum</span><span class="o">;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>        <span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">7</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">10</span><span class="o">};</span>        <span class="kt">int</span> <span class="n">missingNumber</span> <span class="o">=</span> <span class="n">findMissingNumber</span><span class="o">(</span><span class="n">nums</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The missing number is: "</span> <span class="o">+</span> <span class="n">missingNumber</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MissingNumberFinder</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">findMissingNumber</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span> <span class="c1">// Total number of elements, including the missing number</span>
+        <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="o">(</span><span class="n">n</span> <span class="o">*</span> <span class="o">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="o">))</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span> <span class="c1">// Sum of numbers from 1 to n</span>
+
+        <span class="c1">// Calculate the sum of the given array</span>
+        <span class="kt">int</span> <span class="n">arraySum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">num</span> <span class="o">:</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">arraySum</span> <span class="o">+=</span> <span class="n">num</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="c1">// The difference between the total sum and the array sum is the missing number</span>
+        <span class="k">return</span> <span class="n">sum</span> <span class="o">-</span> <span class="n">arraySum</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">7</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">10</span><span class="o">};</span>
+        <span class="kt">int</span> <span class="n">missingNumber</span> <span class="o">=</span> <span class="n">findMissingNumber</span><span class="o">(</span><span class="n">nums</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The missing number is: "</span> <span class="o">+</span> <span class="n">missingNumber</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="limitations-of-arrays"><span class="me-2">Limitations of Arrays:</span><a href="#limitations-of-arrays" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1122,7 +1190,59 @@ The loop variable can be used as an index to access elements.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>                <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;(</span><span class="mi">5</span><span class="o">);</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Initial Size: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>                <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>            <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>        <span class="o">}</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Current Size after adding 5 elements: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>                <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">6</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>            <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>        <span class="o">}</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Current Size after adding 10 elements: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Create an ArrayList of integers with an initial capacity of 5</span>
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;(</span><span class="mi">5</span><span class="o">);</span>
+
+        <span class="c1">// Print the initial size of the ArrayList</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Initial Size: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+
+        <span class="c1">// Add 5 elements to the ArrayList</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Print the current size of the ArrayList</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Current Size after adding 5 elements: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+
+        <span class="c1">// Add more elements to exceed the initial capacity</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">6</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Print the current size of the ArrayList after automatic resizing</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Current Size after adding 10 elements: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="random-access-and-indexing"><span class="me-2">Random Access and Indexing:</span><a href="#random-access-and-indexing" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1132,7 +1252,59 @@ The loop variable can be used as an index to access elements.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListRandomAccessExample</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>                <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>                <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">40</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">50</span><span class="o">);</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 0: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">));</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 2: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">));</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 4: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">4</span><span class="o">));</span>                <span class="n">numbers</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">25</span><span class="o">);</span>         <span class="n">numbers</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">45</span><span class="o">);</span>                 <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Modified ArrayList: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListRandomAccessExample</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Create an ArrayList of integers</span>
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+        <span class="c1">// Add elements to the ArrayList</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">40</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">50</span><span class="o">);</span>
+
+        <span class="c1">// Retrieve and print elements using random access/indexing</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 0: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">));</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 2: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">));</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 4: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">4</span><span class="o">));</span>
+
+        <span class="c1">// Modify elements by assigning new values to specific indexes</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">25</span><span class="o">);</span> <span class="c1">// Replace the element at index 1 with 25</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">45</span><span class="o">);</span> <span class="c1">// Replace the element at index 3 with 45</span>
+
+        <span class="c1">// Print the modified ArrayList</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Modified ArrayList: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="dynamic-operations"><span class="me-2">Dynamic Operations:</span><a href="#dynamic-operations" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1142,7 +1314,87 @@ The loop variable can be used as an index to access elements.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BookManagement</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>                <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">books</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>                <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"The Great Gatsby"</span><span class="o">);</span>        <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"To Kill a Mockingbird"</span><span class="o">);</span>        <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"1984"</span><span class="o">);</span>        <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Pride and Prejudice"</span><span class="o">);</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Initial List of Books: "</span> <span class="o">+</span> <span class="n">books</span><span class="o">);</span>                <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Harry Potter and the Sorcerer's Stone"</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"List of Books after adding a new book: "</span> <span class="o">+</span> <span class="n">books</span><span class="o">);</span>                <span class="n">books</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"List of Books after removing index 2: "</span> <span class="o">+</span> <span class="n">books</span><span class="o">);</span>                <span class="n">books</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="s">"The Catcher in the Rye"</span><span class="o">);</span>         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"List of Books after modifying index 1: "</span> <span class="o">+</span> <span class="n">books</span><span class="o">);</span>                <span class="nc">String</span> <span class="n">searchBook</span> <span class="o">=</span> <span class="s">"To Kill a Mockingbird"</span><span class="o">;</span>        <span class="k">if</span> <span class="o">(</span><span class="n">books</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="n">searchBook</span><span class="o">))</span> <span class="o">{</span>            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"'"</span> <span class="o">+</span> <span class="n">searchBook</span> <span class="o">+</span> <span class="s">"' is present in the list of books."</span><span class="o">);</span>        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"'"</span> <span class="o">+</span> <span class="n">searchBook</span> <span class="o">+</span> <span class="s">"' is not present in the list of books."</span><span class="o">);</span>        <span class="o">}</span>                <span class="kt">int</span> <span class="n">numBooks</span> <span class="o">=</span> <span class="n">books</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Number of books in the list: "</span> <span class="o">+</span> <span class="n">numBooks</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BookManagement</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Create an ArrayList to store books</span>
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">books</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+        <span class="c1">// Add some books to the ArrayList</span>
+        <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"The Great Gatsby"</span><span class="o">);</span>
+        <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"To Kill a Mockingbird"</span><span class="o">);</span>
+        <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"1984"</span><span class="o">);</span>
+        <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Pride and Prejudice"</span><span class="o">);</span>
+
+        <span class="c1">// Print the initial list of books</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Initial List of Books: "</span> <span class="o">+</span> <span class="n">books</span><span class="o">);</span>
+
+        <span class="c1">// Add a new book to the ArrayList</span>
+        <span class="n">books</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Harry Potter and the Sorcerer's Stone"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"List of Books after adding a new book: "</span> <span class="o">+</span> <span class="n">books</span><span class="o">);</span>
+
+        <span class="c1">// Remove a book from the ArrayList based on index</span>
+        <span class="n">books</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span> <span class="c1">// Remove the book at index 2 (1984)</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"List of Books after removing index 2: "</span> <span class="o">+</span> <span class="n">books</span><span class="o">);</span>
+
+        <span class="c1">// Modify a book by assigning a new value to a specific index</span>
+        <span class="n">books</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="s">"The Catcher in the Rye"</span><span class="o">);</span> <span class="c1">// Replace the book at index 1 with "The Catcher in the Rye"</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"List of Books after modifying index 1: "</span> <span class="o">+</span> <span class="n">books</span><span class="o">);</span>
+
+        <span class="c1">// Check if a specific book is present in the ArrayList</span>
+        <span class="nc">String</span> <span class="n">searchBook</span> <span class="o">=</span> <span class="s">"To Kill a Mockingbird"</span><span class="o">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">books</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="n">searchBook</span><span class="o">))</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"'"</span> <span class="o">+</span> <span class="n">searchBook</span> <span class="o">+</span> <span class="s">"' is present in the list of books."</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"'"</span> <span class="o">+</span> <span class="n">searchBook</span> <span class="o">+</span> <span class="s">"' is not present in the list of books."</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Get the number of books in the ArrayList</span>
+        <span class="kt">int</span> <span class="n">numBooks</span> <span class="o">=</span> <span class="n">books</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Number of books in the list: "</span> <span class="o">+</span> <span class="n">numBooks</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="wrapper-class-and-auto-boxing"><span class="me-2">Wrapper Class and Auto-boxing:</span><a href="#wrapper-class-and-auto-boxing" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1154,7 +1406,65 @@ The loop variable can be used as an index to access elements.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>                <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>                <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>                <span class="kt">int</span> <span class="n">firstNumber</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>        <span class="kt">int</span> <span class="n">secondNumber</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>        <span class="kt">int</span> <span class="n">thirdNumber</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"List of Numbers: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"First Number: "</span> <span class="o">+</span> <span class="n">firstNumber</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Second Number: "</span> <span class="o">+</span> <span class="n">secondNumber</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Third Number: "</span> <span class="o">+</span> <span class="n">thirdNumber</span><span class="o">);</span>                <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">firstNumber</span> <span class="o">+</span> <span class="n">secondNumber</span><span class="o">;</span>        <span class="kt">int</span> <span class="n">product</span> <span class="o">=</span> <span class="n">secondNumber</span> <span class="o">*</span> <span class="n">thirdNumber</span><span class="o">;</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Sum of First and Second Number: "</span> <span class="o">+</span> <span class="n">sum</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Product of Second and Third Number: "</span> <span class="o">+</span> <span class="n">product</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Create an ArrayList to store integers</span>
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+        <span class="c1">// Add some integers to the ArrayList (auto-boxing)</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>
+
+        <span class="c1">// Retrieve and print the integers from the ArrayList (auto-unboxing)</span>
+        <span class="kt">int</span> <span class="n">firstNumber</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="kt">int</span> <span class="n">secondNumber</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+        <span class="kt">int</span> <span class="n">thirdNumber</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"List of Numbers: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"First Number: "</span> <span class="o">+</span> <span class="n">firstNumber</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Second Number: "</span> <span class="o">+</span> <span class="n">secondNumber</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Third Number: "</span> <span class="o">+</span> <span class="n">thirdNumber</span><span class="o">);</span>
+
+        <span class="c1">// Perform some arithmetic operations using the integers from the ArrayList</span>
+        <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">firstNumber</span> <span class="o">+</span> <span class="n">secondNumber</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">product</span> <span class="o">=</span> <span class="n">secondNumber</span> <span class="o">*</span> <span class="n">thirdNumber</span><span class="o">;</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Sum of First and Second Number: "</span> <span class="o">+</span> <span class="n">sum</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Product of Second and Third Number: "</span> <span class="o">+</span> <span class="n">product</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="performance-considerations"><span class="me-2">Performance Considerations:</span><a href="#performance-considerations" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1164,7 +1474,79 @@ The loop variable can be used as an index to access elements.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span><span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PerformanceComparison</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>        <span class="kd">final</span> <span class="kt">int</span> <span class="no">ELEMENTS</span> <span class="o">=</span> <span class="mi">100000</span><span class="o">;</span>                <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">arrayList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>        <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">ELEMENTS</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>            <span class="n">arrayList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>        <span class="o">}</span>        <span class="n">arrayList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="no">ELEMENTS</span> <span class="o">/</span> <span class="mi">2</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>        <span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>        <span class="kt">long</span> <span class="n">arrayListTime</span> <span class="o">=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="o">;</span>                <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">linkedList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>        <span class="n">startTime</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">ELEMENTS</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>            <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>        <span class="o">}</span>        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="no">ELEMENTS</span> <span class="o">/</span> <span class="mi">2</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>        <span class="n">endTime</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>        <span class="kt">long</span> <span class="n">linkedListTime</span> <span class="o">=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="o">;</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Time taken by ArrayList (ms): "</span> <span class="o">+</span> <span class="n">arrayListTime</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Time taken by LinkedList (ms): "</span> <span class="o">+</span> <span class="n">linkedListTime</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PerformanceComparison</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">final</span> <span class="kt">int</span> <span class="no">ELEMENTS</span> <span class="o">=</span> <span class="mi">100000</span><span class="o">;</span>
+
+        <span class="c1">// ArrayList performance test</span>
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">arrayList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+        <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
+
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">ELEMENTS</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">arrayList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="n">arrayList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="no">ELEMENTS</span> <span class="o">/</span> <span class="mi">2</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>
+
+        <span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
+        <span class="kt">long</span> <span class="n">arrayListTime</span> <span class="o">=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="o">;</span>
+
+        <span class="c1">// LinkedList performance test</span>
+        <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">linkedList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>
+        <span class="n">startTime</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
+
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">ELEMENTS</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="no">ELEMENTS</span> <span class="o">/</span> <span class="mi">2</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>
+
+        <span class="n">endTime</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
+        <span class="kt">long</span> <span class="n">linkedListTime</span> <span class="o">=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="o">;</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Time taken by ArrayList (ms): "</span> <span class="o">+</span> <span class="n">arrayListTime</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Time taken by LinkedList (ms): "</span> <span class="o">+</span> <span class="n">linkedListTime</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="iteration-and-enhanced-for-loop"><span class="me-2">Iteration and Enhanced For-loop:</span><a href="#iteration-and-enhanced-for-loop" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1178,7 +1560,97 @@ The loop variable can be used as an index to access elements.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BlogPost</span> <span class="o">{</span>    <span class="kd">private</span> <span class="kt">int</span> <span class="n">postId</span><span class="o">;</span>    <span class="kd">private</span> <span class="nc">String</span> <span class="n">title</span><span class="o">;</span>    <span class="kd">private</span> <span class="nc">String</span> <span class="n">content</span><span class="o">;</span>    <span class="kd">private</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">comments</span><span class="o">;</span>    <span class="kd">public</span> <span class="nf">BlogPost</span><span class="o">(</span><span class="kt">int</span> <span class="n">postId</span><span class="o">,</span> <span class="nc">String</span> <span class="n">title</span><span class="o">,</span> <span class="nc">String</span> <span class="n">content</span><span class="o">)</span> <span class="o">{</span>        <span class="k">this</span><span class="o">.</span><span class="na">postId</span> <span class="o">=</span> <span class="n">postId</span><span class="o">;</span>        <span class="k">this</span><span class="o">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">;</span>        <span class="k">this</span><span class="o">.</span><span class="na">content</span> <span class="o">=</span> <span class="n">content</span><span class="o">;</span>        <span class="k">this</span><span class="o">.</span><span class="na">comments</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addComment</span><span class="o">(</span><span class="nc">String</span> <span class="n">comment</span><span class="o">)</span> <span class="o">{</span>        <span class="n">comments</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">comment</span><span class="o">);</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="nf">getComments</span><span class="o">()</span> <span class="o">{</span>        <span class="k">return</span> <span class="n">comments</span><span class="o">;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>                <span class="nc">BlogPost</span> <span class="n">blogPost</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BlogPost</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="s">"Introduction to Java"</span><span class="o">,</span> <span class="s">"Java is a popular programming language."</span><span class="o">);</span>                <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="s">"Great article!"</span><span class="o">);</span>        <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="s">"I learned a lot from this."</span><span class="o">);</span>        <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span>         <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="s">"Great article!"</span><span class="o">);</span>         <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="s">"Thanks for sharing."</span><span class="o">);</span>                <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">comments</span> <span class="o">=</span> <span class="n">blogPost</span><span class="o">.</span><span class="na">getComments</span><span class="o">();</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Comments on the blog post:"</span><span class="o">);</span>        <span class="k">for</span> <span class="o">(</span><span class="nc">String</span> <span class="n">comment</span> <span class="o">:</span> <span class="n">comments</span><span class="o">)</span> <span class="o">{</span>            <span class="k">if</span> <span class="o">(</span><span class="n">comment</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"No comment provided."</span><span class="o">);</span>            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"- "</span> <span class="o">+</span> <span class="n">comment</span><span class="o">);</span>            <span class="o">}</span>        <span class="o">}</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BlogPost</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">postId</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">title</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">content</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">comments</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">BlogPost</span><span class="o">(</span><span class="kt">int</span> <span class="n">postId</span><span class="o">,</span> <span class="nc">String</span> <span class="n">title</span><span class="o">,</span> <span class="nc">String</span> <span class="n">content</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">postId</span> <span class="o">=</span> <span class="n">postId</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">content</span> <span class="o">=</span> <span class="n">content</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">comments</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addComment</span><span class="o">(</span><span class="nc">String</span> <span class="n">comment</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">comments</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">comment</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="nf">getComments</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">comments</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Create a new blog post</span>
+        <span class="nc">BlogPost</span> <span class="n">blogPost</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BlogPost</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="s">"Introduction to Java"</span><span class="o">,</span> <span class="s">"Java is a popular programming language."</span><span class="o">);</span>
+
+        <span class="c1">// Add some comments to the blog post</span>
+        <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="s">"Great article!"</span><span class="o">);</span>
+        <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="s">"I learned a lot from this."</span><span class="o">);</span>
+        <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span> <span class="c1">// Adding a null comment</span>
+        <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="s">"Great article!"</span><span class="o">);</span> <span class="c1">// Adding a duplicate comment</span>
+        <span class="n">blogPost</span><span class="o">.</span><span class="na">addComment</span><span class="o">(</span><span class="s">"Thanks for sharing."</span><span class="o">);</span>
+
+        <span class="c1">// Display the comments on the blog post</span>
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">comments</span> <span class="o">=</span> <span class="n">blogPost</span><span class="o">.</span><span class="na">getComments</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Comments on the blog post:"</span><span class="o">);</span>
+        <span class="k">for</span> <span class="o">(</span><span class="nc">String</span> <span class="n">comment</span> <span class="o">:</span> <span class="n">comments</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">comment</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"No comment provided."</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"- "</span> <span class="o">+</span> <span class="n">comment</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="thread-safety"><span class="me-2">Thread Safety:</span><a href="#thread-safety" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1188,7 +1660,109 @@ The loop variable can be used as an index to access elements.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span><span class="kn">import</span> <span class="nn">java.util.Collections</span><span class="o">;</span><span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ShoppingCart</span> <span class="o">{</span>    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">items</span><span class="o">;</span>    <span class="kd">public</span> <span class="nf">ShoppingCart</span><span class="o">()</span> <span class="o">{</span>                <span class="n">items</span> <span class="o">=</span> <span class="nc">Collections</span><span class="o">.</span><span class="na">synchronizedList</span><span class="o">(</span><span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;());</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addItem</span><span class="o">(</span><span class="nc">String</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>        <span class="n">items</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="nf">getItems</span><span class="o">()</span> <span class="o">{</span>        <span class="k">return</span> <span class="n">items</span><span class="o">;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>        <span class="nc">ShoppingCart</span> <span class="n">cart</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ShoppingCart</span><span class="o">();</span>        <span class="nc">Runnable</span> <span class="n">customerTask</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span>            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>                <span class="nc">String</span> <span class="n">item</span> <span class="o">=</span> <span class="s">"Item "</span> <span class="o">+</span> <span class="n">i</span><span class="o">;</span>                <span class="n">cart</span><span class="o">.</span><span class="na">addItem</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">" added "</span> <span class="o">+</span> <span class="n">item</span><span class="o">);</span>            <span class="o">}</span>        <span class="o">};</span>                <span class="nc">Thread</span> <span class="n">customer1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Thread</span><span class="o">(</span><span class="n">customerTask</span><span class="o">,</span> <span class="s">"Customer 1"</span><span class="o">);</span>        <span class="nc">Thread</span> <span class="n">customer2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Thread</span><span class="o">(</span><span class="n">customerTask</span><span class="o">,</span> <span class="s">"Customer 2"</span><span class="o">);</span>                <span class="n">customer1</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>        <span class="n">customer2</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>                <span class="k">try</span> <span class="o">{</span>            <span class="n">customer1</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>            <span class="n">customer2</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>        <span class="o">}</span>                <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">finalItems</span> <span class="o">=</span> <span class="n">cart</span><span class="o">.</span><span class="na">getItems</span><span class="o">();</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Final Shopping Cart Items: "</span> <span class="o">+</span> <span class="n">finalItems</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Collections</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ShoppingCart</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">items</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">ShoppingCart</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Create a synchronized version of the ArrayList</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="nc">Collections</span><span class="o">.</span><span class="na">synchronizedList</span><span class="o">(</span><span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;());</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addItem</span><span class="o">(</span><span class="nc">String</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">items</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="nf">getItems</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">items</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">ShoppingCart</span> <span class="n">cart</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ShoppingCart</span><span class="o">();</span>
+
+        <span class="nc">Runnable</span> <span class="n">customerTask</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="nc">String</span> <span class="n">item</span> <span class="o">=</span> <span class="s">"Item "</span> <span class="o">+</span> <span class="n">i</span><span class="o">;</span>
+                <span class="n">cart</span><span class="o">.</span><span class="na">addItem</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">" added "</span> <span class="o">+</span> <span class="n">item</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">};</span>
+
+        <span class="c1">// Create multiple threads to simulate multiple customers</span>
+        <span class="nc">Thread</span> <span class="n">customer1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Thread</span><span class="o">(</span><span class="n">customerTask</span><span class="o">,</span> <span class="s">"Customer 1"</span><span class="o">);</span>
+        <span class="nc">Thread</span> <span class="n">customer2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Thread</span><span class="o">(</span><span class="n">customerTask</span><span class="o">,</span> <span class="s">"Customer 2"</span><span class="o">);</span>
+
+        <span class="c1">// Start the threads</span>
+        <span class="n">customer1</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+        <span class="n">customer2</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+
+        <span class="c1">// Wait for both threads to finish</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">customer1</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>
+            <span class="n">customer2</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Get the final contents of the shopping cart</span>
+        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">finalItems</span> <span class="o">=</span> <span class="n">cart</span><span class="o">.</span><span class="na">getItems</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Final Shopping Cart Items: "</span> <span class="o">+</span> <span class="n">finalItems</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>In this second article on Data Structures, we explored more of the essential data structures in Java, focusing on Array and ArrayList. On the one hand, arrays offer a fixed-size container for storing elements of the same type. ArrayLists, on the other hand, provide the flexibility of dynamic resizing. Understanding their characteristics enables you to make informed decisions when choosing the appropriate data structure for your Java programs.</p>
@@ -1499,46 +2073,6 @@ The loop variable can be used as an index to access elements.</p>
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1654,23 +2188,6 @@ The loop variable can be used as an index to access elements.</p>
     
     
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -1737,24 +2254,6 @@ The loop variable can be used as an index to access elements.</p>
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1801,8 +2300,6 @@ The loop variable can be used as an index to access elements.</p>
     
     
     
-      
-    
   
     
     
@@ -1822,78 +2319,6 @@ The loop variable can be used as an index to access elements.</p>
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1938,8 +2363,6 @@ The loop variable can be used as an index to access elements.</p>
     
     
     
-      
-    
   
     
     
@@ -1982,12 +2405,87 @@ The loop variable can be used as an index to access elements.</p>
     
     
     
+  
+    
+    
+    
+    
       
     
   
     
     
     
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -2015,47 +2513,15 @@ The loop variable can be used as an index to access elements.</p>
     
     
     
-      
-    
   
     
     
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -2083,7 +2549,25 @@ The loop variable can be used as an index to access elements.</p>
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2091,6 +2575,82 @@ The loop variable can be used as an index to access elements.</p>
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2108,31 +2668,31 @@ The loop variable can be used as an index to access elements.</p>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-development/">web development</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/software-development/">software development</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/full-stack/">full stack</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/web-development/">web development</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/algorithm-design/">algorithm design</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/benefits/">benefits</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/data-structures/">data structures</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/front-end/">front-end</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/full-stack/">full stack</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programming-concepts/">programming concepts</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/benefits/">benefits</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/front-end/">front-end</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programming-languages/">programming languages</a>
@@ -2184,6 +2744,18 @@ The loop variable can be used as an index to access elements.</p>
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -2380,6 +2952,45 @@ The loop variable can be used as an index to access elements.</p>
         
         
         <div class="col">
+          <a href="/posts/data-structures-in-java-part-3-linked-lists-copy/" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1690153200"
+  data-df="ll"
+  
+>
+  Jul 24, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Data Structures in Java, Part 3 - Linked Lists</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  We have seen thus far the vital importance that data structures play in organizing and managing information effectively. Even though arrays and ArrayLists are well-known for their static size and d...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/posts/the-best-use-cases-for-rust/" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -2418,45 +3029,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
           </a>
         </div>
       
-        
-        
-        <div class="col">
-          <a href="/posts/three-programming-paradigms-and-their-use-cases/" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1685055600"
-  data-df="ll"
-  
->
-  May 26, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Three Programming Paradigms and Their Use Cases</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Understanding the most common programming paradigms is essential in the field of software development in order to craft efficient, maintainable, and scalable applications. In this article I’ll delv...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
     </div>
     <!-- .card-deck -->
   </div>
@@ -2479,12 +3051,13 @@ Rust is a fairly new programming language that aims to provide high-performance,
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/posts/data-structures-in-java-part-3-linked-lists-copy/"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>Data Structures in Java, Part 3 - Linked Lists</p>
+    </a>
   
 </div>
 
@@ -2629,46 +3202,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2784,23 +3317,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -2867,24 +3383,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2931,8 +3429,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
-    
   
     
     
@@ -2952,78 +3448,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3068,8 +3492,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
-    
   
     
     
@@ -3112,12 +3534,87 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
+  
+    
+    
+    
+    
       
     
   
     
     
     
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -3145,47 +3642,15 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
-    
   
     
     
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -3213,7 +3678,25 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3221,6 +3704,82 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3238,31 +3797,31 @@ Rust is a fairly new programming language that aims to provide high-performance,
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-development/">web development</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/software-development/">software development</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/full-stack/">full stack</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/web-development/">web development</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/algorithm-design/">algorithm design</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/benefits/">benefits</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/data-structures/">data structures</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/front-end/">front-end</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/full-stack/">full stack</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programming-concepts/">programming concepts</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/benefits/">benefits</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/front-end/">front-end</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programming-languages/">programming languages</a>

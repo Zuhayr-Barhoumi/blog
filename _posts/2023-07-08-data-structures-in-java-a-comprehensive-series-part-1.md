@@ -56,7 +56,47 @@ int[] numbers = new int[5];
 ## Array Operations Example:
 
 ```java
-public class ArrayExample {    public static void main(String[] args) {                int[] numbers = new int[5];                numbers[0] = 10;        numbers[1] = 20;        numbers[2] = 30;        numbers[3] = 40;        numbers[4] = 50;                System.out.println("Array elements:");        for (int i = 0; i < numbers.length; i++) {            System.out.println(numbers[i]);        }                numbers[2] = 35;                System.out.println("Updated element at index 2: " + numbers[2]);                int sum = 0;        for (int i = 0; i < numbers.length; i++) {            sum += numbers[i];        }        System.out.println("Sum of array elements: " + sum);                int max = numbers[0];        for (int i = 1; i < numbers.length; i++) {            if (numbers[i] > max) {                max = numbers[i];            }        }        System.out.println("Maximum value in the array: " + max);    }}
+public class ArrayExample {
+    public static void main(String[] args) {
+        // Creating an array of integers with a fixed size of 5
+        int[] numbers = new int[5];
+
+        // Inserting values into the array
+        numbers[0] = 10;
+        numbers[1] = 20;
+        numbers[2] = 30;
+        numbers[3] = 40;
+        numbers[4] = 50;
+
+        // Accessing and printing elements of the array
+        System.out.println("Array elements:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+
+        // Updating an element in the array
+        numbers[2] = 35;
+
+        // Accessing and printing the updated element
+        System.out.println("Updated element at index 2: " + numbers[2]);
+
+        // Calculating the sum of all elements in the array
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+        System.out.println("Sum of array elements: " + sum);
+
+        // Finding the maximum value in the array
+        int max = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+        System.out.println("Maximum value in the array: " + max);
+    }
+}
 ```
 
 ## ArrayList
@@ -95,7 +135,48 @@ ArrayList<String> names = new ArrayList<>();
 ## ArrayList Operations Example:
 
 ```java
-import java.util.ArrayList;public class ArrayListExample {    public static void main(String[] args) {                ArrayList<Integer> numbers = new ArrayList<>();                numbers.add(10);        numbers.add(20);        numbers.add(30);        numbers.add(40);                System.out.println("Element at index 0: " + numbers.get(0));        System.out.println("Element at index 2: " + numbers.get(2));                numbers.set(1, 50);        System.out.println("Updated element at index 1: " + numbers.get(1));                numbers.remove(2);        System.out.println("ArrayList after removing element at index 2: " + numbers);                System.out.println("Size of the ArrayList: " + numbers.size());                System.out.println("Is the ArrayList empty? " + numbers.isEmpty());                System.out.println("Elements in the ArrayList:");        for (int number : numbers) {            System.out.println(number);        }                numbers.clear();        System.out.println("ArrayList after clearing: " + numbers);    }}
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        // Create an ArrayList to store integers
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        // Add elements to the ArrayList
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+
+        // Accessing elements
+        System.out.println("Element at index 0: " + numbers.get(0));
+        System.out.println("Element at index 2: " + numbers.get(2));
+
+        // Updating an element
+        numbers.set(1, 50);
+        System.out.println("Updated element at index 1: " + numbers.get(1));
+
+        // Removing an element
+        numbers.remove(2);
+        System.out.println("ArrayList after removing element at index 2: " + numbers);
+
+        // Checking the size of the ArrayList
+        System.out.println("Size of the ArrayList: " + numbers.size());
+
+        // Checking if the ArrayList is empty
+        System.out.println("Is the ArrayList empty? " + numbers.isEmpty());
+
+        // Iterating over the ArrayList using a for-each loop
+        System.out.println("Elements in the ArrayList:");
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+
+        // Clearing the ArrayList
+        numbers.clear();
+        System.out.println("ArrayList after clearing: " + numbers);
+    }
+}
 ```
 
 ## LinkedList
@@ -134,7 +215,54 @@ LinkedList<Integer> numbers = new LinkedList<>();
 ## LinkedList Operations Example:
 
 ```java
-import java.util.LinkedList;public class LinkedListExample {    public static void main(String[] args) {                LinkedList<String> linkedList = new LinkedList<>();                linkedList.add("Apple");        linkedList.add("Banana");        linkedList.add("Cherry");        linkedList.add("Durian");                System.out.println("LinkedList: " + linkedList);                int size = linkedList.size();        System.out.println("Size of LinkedList: " + size);                boolean isEmpty = linkedList.isEmpty();        System.out.println("Is LinkedList empty? " + isEmpty);                String firstElement = linkedList.get(0);        String lastElement = linkedList.getLast();        System.out.println("First element: " + firstElement);        System.out.println("Last element: " + lastElement);                linkedList.add(2, "Grapes");        System.out.println("LinkedList after adding at index 2: " + linkedList);                String removedElement = linkedList.remove(1);        System.out.println("Removed element: " + removedElement);        System.out.println("LinkedList after removing at index 1: " + linkedList);                boolean containsElement = linkedList.contains("Cherry");        System.out.println("Does LinkedList contain 'Cherry'? " + containsElement);                linkedList.clear();        System.out.println("LinkedList after clearing: " + linkedList);    }}
+import java.util.LinkedList;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+        // Create a LinkedList
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        // Add elements to the LinkedList
+        linkedList.add("Apple");
+        linkedList.add("Banana");
+        linkedList.add("Cherry");
+        linkedList.add("Durian");
+
+        // Print the LinkedList
+        System.out.println("LinkedList: " + linkedList);
+
+        // Get the size of the LinkedList
+        int size = linkedList.size();
+        System.out.println("Size of LinkedList: " + size);
+
+        // Check if the LinkedList is empty
+        boolean isEmpty = linkedList.isEmpty();
+        System.out.println("Is LinkedList empty? " + isEmpty);
+
+        // Access elements in the LinkedList
+        String firstElement = linkedList.get(0);
+        String lastElement = linkedList.getLast();
+        System.out.println("First element: " + firstElement);
+        System.out.println("Last element: " + lastElement);
+
+        // Add elements at specific positions
+        linkedList.add(2, "Grapes");
+        System.out.println("LinkedList after adding at index 2: " + linkedList);
+
+        // Remove elements from the LinkedList
+        String removedElement = linkedList.remove(1);
+        System.out.println("Removed element: " + removedElement);
+        System.out.println("LinkedList after removing at index 1: " + linkedList);
+
+        // Check if an element exists in the LinkedList
+        boolean containsElement = linkedList.contains("Cherry");
+        System.out.println("Does LinkedList contain 'Cherry'? " + containsElement);
+
+        // Clear the LinkedList
+        linkedList.clear();
+        System.out.println("LinkedList after clearing: " + linkedList);
+    }
+}
 ```
 
 ## Stack
@@ -173,7 +301,76 @@ Stack<String> stack = new Stack<>();
 ## Stack Operations Example:
 
 ```java
-import java.util.EmptyStackException;public class Stack<T> {    private int size;    private Node<T> top;    private static class Node<T> {        private T data;        private Node<T> next;        public Node(T data) {            this.data = data;        }    }    public Stack() {        size = 0;        top = null;    }    public boolean isEmpty() {        return size == 0;    }    public int size() {        return size;    }    public void push(T element) {        Node<T> newNode = new Node<>(element);        newNode.next = top;        top = newNode;        size++;    }    public T pop() {        if (isEmpty()) {            throw new EmptyStackException();        }        T data = top.data;        top = top.next;        size--;        return data;    }    public T peek() {        if (isEmpty()) {            throw new EmptyStackException();        }        return top.data;    }    public static void main(String[] args) {        Stack<Integer> stack = new Stack<>();        stack.push(10);        stack.push(20);        stack.push(30);        System.out.println("Stack size: " + stack.size());        System.out.println("Top element: " + stack.peek());        System.out.println("Popping elements:");        while (!stack.isEmpty()) {            System.out.println(stack.pop());        }        System.out.println("Stack size: " + stack.size());    }}
+import java.util.EmptyStackException;
+
+public class Stack<T> {
+    private int size;
+    private Node<T> top;
+
+    private static class Node<T> {
+        private T data;
+        private Node<T> next;
+
+        public Node(T data) {
+            this.data = data;
+        }
+    }
+
+    public Stack() {
+        size = 0;
+        top = null;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public int size() {
+        return size;
+    }
+
+    public void push(T element) {
+        Node<T> newNode = new Node<>(element);
+        newNode.next = top;
+        top = newNode;
+        size++;
+    }
+
+    public T pop() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        T data = top.data;
+        top = top.next;
+        size--;
+        return data;
+    }
+
+    public T peek() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return top.data;
+    }
+
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        System.out.println("Stack size: " + stack.size());
+        System.out.println("Top element: " + stack.peek());
+
+        System.out.println("Popping elements:");
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop());
+        }
+
+        System.out.println("Stack size: " + stack.size());
+    }
+}
 ```
 
 ## Queue

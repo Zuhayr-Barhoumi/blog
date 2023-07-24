@@ -1176,9 +1176,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2192 words"
+  title="2564 words"
 >
-  <em>12 min</em> read</span>
+  <em>14 min</em> read</span>
 
     </div>
 
@@ -1237,7 +1237,87 @@
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayExample</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>                <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">];</span>                <span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>        <span class="n">numbers</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>        <span class="n">numbers</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">30</span><span class="o">;</span>        <span class="n">numbers</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="mi">40</span><span class="o">;</span>        <span class="n">numbers</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span> <span class="o">=</span> <span class="mi">50</span><span class="o">;</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Array elements:"</span><span class="o">);</span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>        <span class="o">}</span>                <span class="n">numbers</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">35</span><span class="o">;</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Updated element at index 2: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">[</span><span class="mi">2</span><span class="o">]);</span>                <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>            <span class="n">sum</span> <span class="o">+=</span> <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>        <span class="o">}</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Sum of array elements: "</span> <span class="o">+</span> <span class="n">sum</span><span class="o">);</span>                <span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>            <span class="k">if</span> <span class="o">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">max</span><span class="o">)</span> <span class="o">{</span>                <span class="n">max</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>            <span class="o">}</span>        <span class="o">}</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Maximum value in the array: "</span> <span class="o">+</span> <span class="n">max</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayExample</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Creating an array of integers with a fixed size of 5</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">];</span>
+
+        <span class="c1">// Inserting values into the array</span>
+        <span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+        <span class="n">numbers</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+        <span class="n">numbers</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">30</span><span class="o">;</span>
+        <span class="n">numbers</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="mi">40</span><span class="o">;</span>
+        <span class="n">numbers</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span> <span class="o">=</span> <span class="mi">50</span><span class="o">;</span>
+
+        <span class="c1">// Accessing and printing elements of the array</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Array elements:"</span><span class="o">);</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Updating an element in the array</span>
+        <span class="n">numbers</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">35</span><span class="o">;</span>
+
+        <span class="c1">// Accessing and printing the updated element</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Updated element at index 2: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">[</span><span class="mi">2</span><span class="o">]);</span>
+
+        <span class="c1">// Calculating the sum of all elements in the array</span>
+        <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">sum</span> <span class="o">+=</span> <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+        <span class="o">}</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Sum of array elements: "</span> <span class="o">+</span> <span class="n">sum</span><span class="o">);</span>
+
+        <span class="c1">// Finding the maximum value in the array</span>
+        <span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">max</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">max</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Maximum value in the array: "</span> <span class="o">+</span> <span class="n">max</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="arraylist"><span class="me-2">ArrayList</span><a href="#arraylist" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1284,7 +1364,89 @@
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>                <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>                <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">40</span><span class="o">);</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 0: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">));</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 2: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">));</span>                <span class="n">numbers</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">50</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Updated element at index 1: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">));</span>                <span class="n">numbers</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ArrayList after removing element at index 2: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">);</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Size of the ArrayList: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Is the ArrayList empty? "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">());</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Elements in the ArrayList:"</span><span class="o">);</span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">number</span> <span class="o">:</span> <span class="n">numbers</span><span class="o">)</span> <span class="o">{</span>            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>        <span class="o">}</span>                <span class="n">numbers</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ArrayList after clearing: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Create an ArrayList to store integers</span>
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+        <span class="c1">// Add elements to the ArrayList</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">40</span><span class="o">);</span>
+
+        <span class="c1">// Accessing elements</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 0: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">));</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at index 2: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">));</span>
+
+        <span class="c1">// Updating an element</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">50</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Updated element at index 1: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">));</span>
+
+        <span class="c1">// Removing an element</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ArrayList after removing element at index 2: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">);</span>
+
+        <span class="c1">// Checking the size of the ArrayList</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Size of the ArrayList: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+
+        <span class="c1">// Checking if the ArrayList is empty</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Is the ArrayList empty? "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">());</span>
+
+        <span class="c1">// Iterating over the ArrayList using a for-each loop</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Elements in the ArrayList:"</span><span class="o">);</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">number</span> <span class="o">:</span> <span class="n">numbers</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Clearing the ArrayList</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ArrayList after clearing: "</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="linkedlist"><span class="me-2">LinkedList</span><a href="#linkedlist" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1331,7 +1493,101 @@
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LinkedListExample</span> <span class="o">{</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>                <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">linkedList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>                <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Apple"</span><span class="o">);</span>        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Banana"</span><span class="o">);</span>        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Cherry"</span><span class="o">);</span>        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Durian"</span><span class="o">);</span>                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LinkedList: "</span> <span class="o">+</span> <span class="n">linkedList</span><span class="o">);</span>                <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Size of LinkedList: "</span> <span class="o">+</span> <span class="n">size</span><span class="o">);</span>                <span class="kt">boolean</span> <span class="n">isEmpty</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">();</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Is LinkedList empty? "</span> <span class="o">+</span> <span class="n">isEmpty</span><span class="o">);</span>                <span class="nc">String</span> <span class="n">firstElement</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>        <span class="nc">String</span> <span class="n">lastElement</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">getLast</span><span class="o">();</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"First element: "</span> <span class="o">+</span> <span class="n">firstElement</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Last element: "</span> <span class="o">+</span> <span class="n">lastElement</span><span class="o">);</span>                <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="s">"Grapes"</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LinkedList after adding at index 2: "</span> <span class="o">+</span> <span class="n">linkedList</span><span class="o">);</span>                <span class="nc">String</span> <span class="n">removedElement</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Removed element: "</span> <span class="o">+</span> <span class="n">removedElement</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LinkedList after removing at index 1: "</span> <span class="o">+</span> <span class="n">linkedList</span><span class="o">);</span>                <span class="kt">boolean</span> <span class="n">containsElement</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="s">"Cherry"</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Does LinkedList contain 'Cherry'? "</span> <span class="o">+</span> <span class="n">containsElement</span><span class="o">);</span>                <span class="n">linkedList</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LinkedList after clearing: "</span> <span class="o">+</span> <span class="n">linkedList</span><span class="o">);</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">LinkedListExample</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Create a LinkedList</span>
+        <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">linkedList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>
+
+        <span class="c1">// Add elements to the LinkedList</span>
+        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Apple"</span><span class="o">);</span>
+        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Banana"</span><span class="o">);</span>
+        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Cherry"</span><span class="o">);</span>
+        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Durian"</span><span class="o">);</span>
+
+        <span class="c1">// Print the LinkedList</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LinkedList: "</span> <span class="o">+</span> <span class="n">linkedList</span><span class="o">);</span>
+
+        <span class="c1">// Get the size of the LinkedList</span>
+        <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Size of LinkedList: "</span> <span class="o">+</span> <span class="n">size</span><span class="o">);</span>
+
+        <span class="c1">// Check if the LinkedList is empty</span>
+        <span class="kt">boolean</span> <span class="n">isEmpty</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Is LinkedList empty? "</span> <span class="o">+</span> <span class="n">isEmpty</span><span class="o">);</span>
+
+        <span class="c1">// Access elements in the LinkedList</span>
+        <span class="nc">String</span> <span class="n">firstElement</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="nc">String</span> <span class="n">lastElement</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">getLast</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"First element: "</span> <span class="o">+</span> <span class="n">firstElement</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Last element: "</span> <span class="o">+</span> <span class="n">lastElement</span><span class="o">);</span>
+
+        <span class="c1">// Add elements at specific positions</span>
+        <span class="n">linkedList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="s">"Grapes"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LinkedList after adding at index 2: "</span> <span class="o">+</span> <span class="n">linkedList</span><span class="o">);</span>
+
+        <span class="c1">// Remove elements from the LinkedList</span>
+        <span class="nc">String</span> <span class="n">removedElement</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Removed element: "</span> <span class="o">+</span> <span class="n">removedElement</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LinkedList after removing at index 1: "</span> <span class="o">+</span> <span class="n">linkedList</span><span class="o">);</span>
+
+        <span class="c1">// Check if an element exists in the LinkedList</span>
+        <span class="kt">boolean</span> <span class="n">containsElement</span> <span class="o">=</span> <span class="n">linkedList</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="s">"Cherry"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Does LinkedList contain 'Cherry'? "</span> <span class="o">+</span> <span class="n">containsElement</span><span class="o">);</span>
+
+        <span class="c1">// Clear the LinkedList</span>
+        <span class="n">linkedList</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LinkedList after clearing: "</span> <span class="o">+</span> <span class="n">linkedList</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="stack"><span class="me-2">Stack</span><a href="#stack" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1378,7 +1634,145 @@
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.EmptyStackException</span><span class="o">;</span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Stack</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>    <span class="kd">private</span> <span class="kt">int</span> <span class="n">size</span><span class="o">;</span>    <span class="kd">private</span> <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">top</span><span class="o">;</span>    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>        <span class="kd">private</span> <span class="no">T</span> <span class="n">data</span><span class="o">;</span>        <span class="kd">private</span> <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">next</span><span class="o">;</span>        <span class="kd">public</span> <span class="nf">Node</span><span class="o">(</span><span class="no">T</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>            <span class="k">this</span><span class="o">.</span><span class="na">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">;</span>        <span class="o">}</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="nf">Stack</span><span class="o">()</span> <span class="o">{</span>        <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>        <span class="n">top</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="o">{</span>        <span class="k">return</span> <span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="o">;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">size</span><span class="o">()</span> <span class="o">{</span>        <span class="k">return</span> <span class="n">size</span><span class="o">;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">push</span><span class="o">(</span><span class="no">T</span> <span class="n">element</span><span class="o">)</span> <span class="o">{</span>        <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">newNode</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Node</span><span class="o">&lt;&gt;(</span><span class="n">element</span><span class="o">);</span>        <span class="n">newNode</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">top</span><span class="o">;</span>        <span class="n">top</span> <span class="o">=</span> <span class="n">newNode</span><span class="o">;</span>        <span class="n">size</span><span class="o">++;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="no">T</span> <span class="nf">pop</span><span class="o">()</span> <span class="o">{</span>        <span class="k">if</span> <span class="o">(</span><span class="n">isEmpty</span><span class="o">())</span> <span class="o">{</span>            <span class="k">throw</span> <span class="k">new</span> <span class="nc">EmptyStackException</span><span class="o">();</span>        <span class="o">}</span>        <span class="no">T</span> <span class="n">data</span> <span class="o">=</span> <span class="n">top</span><span class="o">.</span><span class="na">data</span><span class="o">;</span>        <span class="n">top</span> <span class="o">=</span> <span class="n">top</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>        <span class="n">size</span><span class="o">--;</span>        <span class="k">return</span> <span class="n">data</span><span class="o">;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="no">T</span> <span class="nf">peek</span><span class="o">()</span> <span class="o">{</span>        <span class="k">if</span> <span class="o">(</span><span class="n">isEmpty</span><span class="o">())</span> <span class="o">{</span>            <span class="k">throw</span> <span class="k">new</span> <span class="nc">EmptyStackException</span><span class="o">();</span>        <span class="o">}</span>        <span class="k">return</span> <span class="n">top</span><span class="o">.</span><span class="na">data</span><span class="o">;</span>    <span class="o">}</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>        <span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Stack</span><span class="o">&lt;&gt;();</span>        <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>        <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>        <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Stack size: "</span> <span class="o">+</span> <span class="n">stack</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Top element: "</span> <span class="o">+</span> <span class="n">stack</span><span class="o">.</span><span class="na">peek</span><span class="o">());</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Popping elements:"</span><span class="o">);</span>        <span class="k">while</span> <span class="o">(!</span><span class="n">stack</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">stack</span><span class="o">.</span><span class="na">pop</span><span class="o">());</span>        <span class="o">}</span>        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Stack size: "</span> <span class="o">+</span> <span class="n">stack</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>    <span class="o">}}</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.EmptyStackException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Stack</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">size</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">top</span><span class="o">;</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>
+        <span class="kd">private</span> <span class="no">T</span> <span class="n">data</span><span class="o">;</span>
+        <span class="kd">private</span> <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">next</span><span class="o">;</span>
+
+        <span class="kd">public</span> <span class="nf">Node</span><span class="o">(</span><span class="no">T</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nf">Stack</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="n">top</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">size</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">size</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">push</span><span class="o">(</span><span class="no">T</span> <span class="n">element</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">newNode</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Node</span><span class="o">&lt;&gt;(</span><span class="n">element</span><span class="o">);</span>
+        <span class="n">newNode</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">top</span><span class="o">;</span>
+        <span class="n">top</span> <span class="o">=</span> <span class="n">newNode</span><span class="o">;</span>
+        <span class="n">size</span><span class="o">++;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="no">T</span> <span class="nf">pop</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nf">EmptyStackException</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="no">T</span> <span class="n">data</span> <span class="o">=</span> <span class="n">top</span><span class="o">.</span><span class="na">data</span><span class="o">;</span>
+        <span class="n">top</span> <span class="o">=</span> <span class="n">top</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+        <span class="n">size</span><span class="o">--;</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="no">T</span> <span class="nf">peek</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nf">EmptyStackException</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">top</span><span class="o">.</span><span class="na">data</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Stack</span><span class="o">&lt;&gt;();</span>
+
+        <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+        <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>
+        <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Stack size: "</span> <span class="o">+</span> <span class="n">stack</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Top element: "</span> <span class="o">+</span> <span class="n">stack</span><span class="o">.</span><span class="na">peek</span><span class="o">());</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Popping elements:"</span><span class="o">);</span>
+        <span class="k">while</span> <span class="o">(!</span><span class="n">stack</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">stack</span><span class="o">.</span><span class="na">pop</span><span class="o">());</span>
+        <span class="o">}</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Stack size: "</span> <span class="o">+</span> <span class="n">stack</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="queue"><span class="me-2">Queue</span><a href="#queue" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -1883,46 +2277,6 @@
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2038,23 +2392,6 @@
     
     
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -2121,24 +2458,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2185,8 +2504,6 @@
     
     
     
-      
-    
   
     
     
@@ -2206,78 +2523,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2322,8 +2567,6 @@
     
     
     
-      
-    
   
     
     
@@ -2366,12 +2609,87 @@
     
     
     
+  
+    
+    
+    
+    
       
     
   
     
     
     
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -2399,47 +2717,15 @@
     
     
     
-      
-    
   
     
     
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -2467,7 +2753,25 @@
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2475,6 +2779,82 @@
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2492,31 +2872,31 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-development/">web development</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/software-development/">software development</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/full-stack/">full stack</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/web-development/">web development</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/algorithm-design/">algorithm design</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/benefits/">benefits</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/data-structures/">data structures</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/front-end/">front-end</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/full-stack/">full stack</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programming-concepts/">programming concepts</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/benefits/">benefits</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/front-end/">front-end</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programming-languages/">programming languages</a>
@@ -2568,6 +2948,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -2764,6 +3156,45 @@
         
         
         <div class="col">
+          <a href="/posts/data-structures-in-java-part-3-linked-lists-copy/" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1690153200"
+  data-df="ll"
+  
+>
+  Jul 24, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Data Structures in Java, Part 3 - Linked Lists</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  We have seen thus far the vital importance that data structures play in organizing and managing information effectively. Even though arrays and ArrayLists are well-known for their static size and d...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/posts/the-best-use-cases-for-rust/" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -2796,45 +3227,6 @@
                   This post is about the best use cases for the Rust programming language.
 
 Rust is a fairly new programming language that aims to provide high-performance, safe and reliable systems programming. It ...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/posts/three-programming-paradigms-and-their-use-cases/" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1685055600"
-  data-df="ll"
-  
->
-  May 26, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Three Programming Paradigms and Their Use Cases</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Understanding the most common programming paradigms is essential in the field of software development in order to craft efficient, maintainable, and scalable applications. In this article I’ll delv...
                 </p>
               </div>
             </div>
@@ -3014,46 +3406,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -3169,23 +3521,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -3252,24 +3587,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -3316,8 +3633,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
-    
   
     
     
@@ -3337,78 +3652,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3453,8 +3696,6 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
-    
   
     
     
@@ -3497,12 +3738,87 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
+  
+    
+    
+    
+    
       
     
   
     
     
     
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -3530,47 +3846,15 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
-    
   
     
     
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -3598,7 +3882,25 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3606,6 +3908,82 @@ Rust is a fairly new programming language that aims to provide high-performance,
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3623,31 +4001,31 @@ Rust is a fairly new programming language that aims to provide high-performance,
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-development/">web development</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/software-development/">software development</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/full-stack/">full stack</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/web-development/">web development</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/algorithm-design/">algorithm design</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/benefits/">benefits</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/data-structures/">data structures</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/front-end/">front-end</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/full-stack/">full stack</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programming-concepts/">programming concepts</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/benefits/">benefits</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/front-end/">front-end</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programming-languages/">programming languages</a>

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Zuhayr Barhumi</title>
   <subtitle>A blog dedicated to documenting my coding journey, exploring tech's possibilities and sharing expert insights.</subtitle>
-  <updated>2023-07-23T04:17:14+01:00</updated>
+  <updated>2023-07-24T14:01:49+01:00</updated>
   <author>
     <name>Zuhayr Barhumi</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Data Structures in Java, Part 3 - Linked Lists</title>
+    <link href="http://localhost:4000/posts/data-structures-in-java-part-3-linked-lists-copy/" rel="alternate" type="text/html" title="Data Structures in Java, Part 3 - Linked Lists" />
+    <published>2023-07-24T00:00:00+01:00</published>
+  
+    <updated>2023-07-24T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/data-structures-in-java-part-3-linked-lists-copy/</id>
+    <content src="http://localhost:4000/posts/data-structures-in-java-part-3-linked-lists-copy/" />
+    <author>
+      <name>Zuhayr Barhumi</name>
+    </author>
+
+  
+    
+    <category term="Software Development" />
+    
+    <category term="Java" />
+    
+    <category term="Programming" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      We have seen thus far the vital importance that data structures play in organizing and managing information effectively. Even though arrays and ArrayLists are well-known for their static size and dynamic resizing capabilities, we have at our disposal a powerful alternative that offers greater flexibility and memory efficiency — the Linked List.
+
+Through this article, I explore the significance ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -172,44 +212,6 @@ In this piece, I share an overview of data structures in ...
 Advantages of Using Decentralized Databases for Web Development
 
 Technology is advancing rapidly in today’s world, leading businesses to seek innovative solutions to improve their data storage and management. Decentralized databases have gained attention as a solution in recent years. These databases offer several advantages over traditional, centralized databases, making them a desirable cho...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>The Future of Full Stack Web Development - Trends to Watch in 2023</title>
-    <link href="http://localhost:4000/posts/the-future-of-full-stack-web-development-trends-to-watch-in-2023/" rel="alternate" type="text/html" title="The Future of Full Stack Web Development - Trends to Watch in 2023" />
-    <published>2023-02-13T00:00:00+01:00</published>
-  
-    <updated>2023-02-13T00:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/the-future-of-full-stack-web-development-trends-to-watch-in-2023/</id>
-    <content src="http://localhost:4000/posts/the-future-of-full-stack-web-development-trends-to-watch-in-2023/" />
-    <author>
-      <name>Zuhayr Barhumi</name>
-    </author>
-
-  
-    
-    <category term="Web Development" />
-    
-    <category term="Technology" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Latest Trends in Full Stack Web Development: Cross-Platform &amp;amp; AI/ML
-
-Web development has always been a dynamic field. New technologies and trends have been emerging everyday. In recent years, the speed of this change has only accelerated. Full Stack Web Development is more arduous than ever. The field requires developers to have a wide range of skills and knowledge. It is challenging for de...
     </summary>
   
 
